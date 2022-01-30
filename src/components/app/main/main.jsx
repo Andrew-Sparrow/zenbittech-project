@@ -7,7 +7,7 @@ const MainStyle = styled.main`
   flex-direction: column;
   background-image: url('../img/map.png');
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right top;
   min-height: calc(100vh - 200px);
 
   h1 {
