@@ -10,7 +10,7 @@ function withLayout(Component, className) {
       border-top: 1px solid #D8D8D8;
       margin-top: -201px;
       z-index: 100;
-      background-color: #FAD34F;
+      background: #FAD34F;
     }
   `;
 

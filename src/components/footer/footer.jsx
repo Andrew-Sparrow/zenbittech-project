@@ -2,9 +2,13 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
 const FooterStyle = styled.footer`
-    background-color: #FAFAFA;
     min-height: 200px;
     border-top: 1px solid #D8D8D8;
+    background-image: url("../img/ellipse-ghost.svg");
+    background-position: top right 127px;
+    background-repeat: no-repeat;
+    background-color: #FAFAFA;
+    box-sizing: border-box;
 
     .icons {
       padding-top: 70px;
