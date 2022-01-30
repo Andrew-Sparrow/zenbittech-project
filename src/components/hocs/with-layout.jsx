@@ -1,13 +1,23 @@
 import Layout from '../layout/layout';
+import styled from 'styled-components';
 
-const withLayout = (Component, className) =>
-  function wrapper(props) {
+function withLayout(Component, className) {
+  const LayoutStyle = styled.div`
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  `;
+
+  return function wrapper(props) {
     return (
-      <Layout className={className}>
-        <Component {...props} />
-      </Layout>
+      <LayoutStyle className={className}>
+        <Layout>
+          <Component {...props} />
+        </Layout>
+      </LayoutStyle>
     );
   };
+}
 
 withLayout.displayName = 'withLayout';
 

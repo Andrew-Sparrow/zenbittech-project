@@ -31,4 +31,4 @@ function Main() {
   );
 }
 
-export default withLayout(Main, 'layout');
+export default withLayout(Main, 'wrapper');

@@ -1,13 +1,16 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
-const FooterSTyle = styled.footer`
-    background-color: orange;
+const FooterStyle = styled.footer`
+    background-color: #FAFAFA;
     min-height: 200px;
+    border-top: 1px solid #D8D8D8;
 
     .icons {
-      padding-top: 80px;
+      padding-top: 70px;
       margin-left: 200px;
+      margin-top: 0;
+      margin-bottom: 0;
       list-style: none;
       display: flex;
 
@@ -20,30 +23,30 @@ const FooterSTyle = styled.footer`
 
 function Footer() {
   return (
-    <FooterSTyle>
-      <ul class="icons">
-        <li class="icons__item">
+    <FooterStyle>
+      <ul className="icons">
+        <li className="icons__item">
           <Link to="https://www.linkedin.com">
             <svg width="13" height="13">
               <use xlinkHref="#linkedin"></use>
             </svg>
           </Link>
         </li>
-        <li class="icons__item">
+        <li className="icons__item">
           <Link to="https://twitter.com">
             <svg width="16" height="13">
               <use xlinkHref="#twitter"></use>
             </svg>
           </Link>
         </li>
-        <li class="icons__item">
+        <li className="icons__item">
           <Link to="https://www.facebook.com">
             <svg width="8" height="16">
               <use xlinkHref="#facebook"></use>
             </svg>
           </Link>
         </li>
-        <li class="icons__item">
+        <li className="icons__item">
           <Link to="https://www.pinterest.com">
             <svg width="13" height="13">
               <use xlinkHref="#pinterest"></use>
@@ -51,7 +54,7 @@ function Footer() {
           </Link>
         </li>
       </ul>
-    </FooterSTyle>
+    </FooterStyle>
   );
 }
 
