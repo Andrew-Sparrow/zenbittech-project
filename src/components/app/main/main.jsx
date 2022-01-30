@@ -4,11 +4,15 @@ import Form from '../../form/form';
 const MainStyle = styled.main`
   display: flex;
   flex-direction: column;
-  padding-top: 180px;
+  background-image: url('../img/map.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 928px;
 
   h1 {
     color: #3E3E3E;
     font-family: 'Apercu Arabic Pro';
+    margin-top: 180px;
     font-weight: 400;
     margin-left: 150px;
     margin-bottom: 30px;
