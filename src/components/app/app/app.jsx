@@ -3,14 +3,10 @@ import {createGlobalStyle, ThemeProvider} from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   * {
-    font-family: 'Arial';
+    font-family: 'Apercu Arabic Pro', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
     color: #ffffff;
-  }
-
-  body {
-    background-color: #cc7a00;
   }
 `;
 
