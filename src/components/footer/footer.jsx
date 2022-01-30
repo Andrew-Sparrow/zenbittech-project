@@ -2,11 +2,8 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
 const FooterSTyle = styled.footer`
-  footer {
-    background-color: red;
-    color: red;
+    background-color: orange;
     min-height: 200px;
-  }
 `;
 
 function Footer() {

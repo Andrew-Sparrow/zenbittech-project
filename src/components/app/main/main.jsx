@@ -8,7 +8,7 @@ const MainStyle = styled.main`
   background-image: url('../img/map.png');
   background-repeat: no-repeat;
   background-position: right;
-  min-height: 928px;
+  min-height: calc(100vh - 200px);
 
   h1 {
     color: #3E3E3E;
