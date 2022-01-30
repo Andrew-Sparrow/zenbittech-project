@@ -25,7 +25,7 @@ const ErrorStyle = styled.main`
   }
 `;
 
-function Error() {
+function NoMatch() {
   return (
     <ErrorStyle >
       <>
@@ -36,5 +36,5 @@ function Error() {
   );
 }
 
-const withLayoutError = withLayout(Error);
+const withLayoutError = withLayout(NoMatch);
 export default withLayoutError;

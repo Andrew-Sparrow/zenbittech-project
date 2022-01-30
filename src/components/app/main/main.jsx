@@ -32,4 +32,3 @@ function Main() {
 }
 
 export default withLayout(Main, 'layout');
-

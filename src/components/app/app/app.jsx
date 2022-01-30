@@ -2,7 +2,7 @@ import Main from '../main/main';
 import {createGlobalStyle, ThemeProvider} from 'styled-components';
 import {Routes, Route, HashRouter as BrowserRouter} from 'react-router-dom';
 import { AppRoute } from '../../../const';
-import WithLayoutError from '../../error/error';
+import WithLayoutError from '../../no-match/no-match';
 
 const GlobalStyle = createGlobalStyle`
   * {
