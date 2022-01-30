@@ -1,5 +1,8 @@
 import Main from '../main/main';
 import {createGlobalStyle, ThemeProvider} from 'styled-components';
+import {Routes, Route, HashRouter as BrowserRouter} from 'react-router-dom';
+import { AppRoute } from '../../../const';
+import WithLayoutError from '../../error/error';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -25,7 +28,12 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Main/>
+      <BrowserRouter>
+        <Routes>
+          <Route path={AppRoute.MAIN} element={<Main />} />
+          <Route path="*" element={<WithLayoutError />} />
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Form from '../../form/form';
+import withLayout from '../../hocs/with-layout';
 
 const MainStyle = styled.main`
   display: flex;
@@ -30,4 +31,5 @@ function Main() {
   );
 }
 
-export default Main;
+export default withLayout(Main, 'layout');
+

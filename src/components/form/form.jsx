@@ -25,12 +25,6 @@ const FormStyle = styled.form`
     &--last {
       margin-bottom: 25px;
     }
-
-    &::placeholder {
-      color: #2D2D2D;
-      font-size: 18px;
-      line-height: 32px;
-    }
   }
 
   .form__submit {
@@ -52,6 +46,18 @@ const FormStyle = styled.form`
       background-color: #f2c737;
     }
   }
+
+  textarea {
+    resize: none;
+    min-height: 189px;
+  }
+
+  .form__input::placeholder,
+  textarea::placeholder {
+    color: #2D2D2D;
+    font-size: 18px;
+    line-height: 32px;
+  }
 `;
 
 function Form() {
@@ -69,9 +75,8 @@ function Form() {
         placeholder="Your e-mail*"
         required
       />
-      <input
+      <textarea
         className="form__input form__input--last"
-        type="text"
         placeholder="Your message*"
       />
       <button

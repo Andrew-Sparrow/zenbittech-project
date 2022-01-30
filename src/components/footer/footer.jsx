@@ -1,35 +1,23 @@
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
-const FormStyle = styled.form`
-
+const FooterSTyle = styled.footer`
+  footer {
+    background-color: red;
+    color: red;
+    min-height: 200px;
+  }
 `;
 
 function Footer() {
   return (
-    <FormStyle>
-      <input
-        className="form__input"
-        type="text"
-        placeholder="Your name*"
-      />
-      <input
-        className="form__input"
-        type="email"
-        name="email"
-        placeholder="Your e-mail*"
-        required
-      />
-      <input
-        className="form__input form__input--last"
-        type="text"
-        placeholder="Your message*"
-      />
-      <button
-        className="form__submit"
-        type="submit"
-        id="login-button"
-      >Send message</button>
-    </FormStyle>
+    <FooterSTyle>
+      <Link to="https://www.linkedin.com">
+        <svg className="place-card__bookmark-icon" width="13" height="13">
+          <use xlinkHref="#icon-bookmark"></use>
+        </svg>
+      </Link>
+    </FooterSTyle>
   );
 }
 
