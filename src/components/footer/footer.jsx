@@ -4,15 +4,15 @@ import {Link} from 'react-router-dom';
 const FooterStyle = styled.footer`
     min-height: 200px;
     border-top: 1px solid #D8D8D8;
-    background-image: url("../img/ellipse-ghost.svg");
-    background-position: top right 127px;
+    background-image: url("../img/footer-balloons.svg");
+    background-position: top -40px right 0;
     background-repeat: no-repeat;
     background-color: #FAFAFA;
     box-sizing: border-box;
 
     .icons {
       padding-top: 70px;
-      margin-left: 200px;
+      margin-left: 280px;
       margin-top: 0;
       margin-bottom: 0;
       list-style: none;
