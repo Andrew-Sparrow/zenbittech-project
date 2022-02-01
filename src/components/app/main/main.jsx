@@ -5,9 +5,9 @@ import withLayout from '../../hocs/with-layout';
 const MainStyle = styled.main`
   display: flex;
   flex-direction: column;
-  background-image: url('../img/map.png');
-  background-repeat: no-repeat;
-  background-position: right top;
+  background-image: url('../img/main-balloons.svg'), url('../img/map.png'), url('../img/clouds.svg');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left 50px top, right top, top;
   min-height: calc(100vh - 200px);
 
   h1 {
